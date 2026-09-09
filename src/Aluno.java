@@ -20,14 +20,14 @@ public class Aluno {
     }
 
     public void calcularMedia(){
+        Double mediaTotal = 0.0;
         for(Prova p: provas){
-            for (int i = 0; i < provas.size(); i++) {}
-                media = p.nota;
-            System.out.println(media);
+            mediaTotal += p.nota;
         }
-        System.out.println("Tamanho da lista: " + provas.size());
+        mediaTotal /= provas.size();
+        System.out.println("\nmédia total: " + mediaTotal);
     }
-    public void adicionarProva(Prova prova){
+    public void adicionarProva (){
     }
     public void exibirInfoAluno () {
 
